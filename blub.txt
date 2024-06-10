@@ -1,0 +1,12 @@
+ROOT PASSWORD: test987Login!  für Docker 
+
+Docker Infos:
+    wenn man Dockerfile erstellt (Standard beispiele online) danach "docker build -t loginproject ." in terminal ausführen
+    -> für einige Datenbanken etc gibt es schon Standard Dockerfiles (z.B. mySQL). Dafür "sudo docker pull mysql/mysql-server:latest" ausführen
+    dann 2 MÖGLICHKEITEN
+    1. start.sh (Bash start Datei) erstellen, dann in Terminal "chmod +x start.sh" ausführen, damit die Datei ausführbar wird und ab dann immer ./start.sh, um docker container zu starten.
+       Mit "mysql -uroot -h127.0.0.1 -p -P6603" kommst du dann in mysql rein und kannst Tabellen etc erstellen. (PW aus start Datei)
+    2. In Terminal "sudo docker run --name=<container_name> -d mysql/mysql-server:latest" ausführen -> Bsp.Output darauf: 8af92a51ef57508073bb9af920bd8946b6ebf25c1d8d7e54212b75bf109865a2. 
+       Dann "sudo apt-get install mysql-client" mySQL-Client installieren, falls noch nicht geschehen. Dann ROOT PASSWORD rausfinden (z.B. in docker desktop in den Logs) und sicher abspeichern.
+       In Terminal "sudo docker exec -it loginproject bash" ausführen und in bash "mysql -uroot -p" und ROOT PASSWORD als pw eingeben. Jetzt kannst du theoretisch einfach eine Tabelle etc erstellen.
+    Dann kannst du in sql "Modus" Tabellen etc erstellen oder eine .sql datei erstellen (bspw. file.sql) und dann einmalig mit Docker container verbinden "mysql -uroot -h127.0.0.1 -p -P6603 < file.sql"

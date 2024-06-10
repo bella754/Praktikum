@@ -1,0 +1,58 @@
+{
+    "persons": [
+        {
+            "E-Mail": "max.mustermann@skygate.com",
+            "Name": "Max Mustermann",
+            "PLZ": "12345",
+            "Ort": "Berlin",
+            "Telefon": "017022625342",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        },
+        {
+            "E-Mail": "sabrina.bayer@gmail.com",
+            "Name": "Sabrina Bayer",
+            "PLZ": "14167",
+            "Ort": "Dortmund",
+            "Telefon": "017692738492",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        },
+        {
+            "E-Mail": "felix.lobrecht@icloud.com",
+            "Name": "Felix Lobrecht",
+            "PLZ": "14129",
+            "Ort": "Köln",
+            "Telefon": "017043267390",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        },
+        {
+            "E-Mail": "eva.schmidt@yahoo.de",
+            "Name": "Eva Schmidt",
+            "PLZ": "10319",
+            "Ort": "Hamburg",
+            "Telefon": "012345678910",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        },
+        {
+            "E-Mail": "boris.leibniz@gmail.com",
+            "Name": "Boris Leibniz",
+            "PLZ": "16253",
+            "Ort": "Dresden",
+            "Telefon": "017825370847",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        },
+        {
+            "E-Mail": "brigitta.schumacher@skygate.com",
+            "Name": "Brigitta Schumacher",
+            "PLZ": "16243",
+            "Ort": "Brandenburg",
+            "Telefon": "017082637402",
+            "Passwort": "blabla",
+            "PasswortWiederholen": "blabla"
+        }
+    ]
+}
